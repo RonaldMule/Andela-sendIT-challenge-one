@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="col-5">
-                <input type="text" name="search" id="search" class="search-form " value="please enter your search........">
+                <input type="text" name="search" id="search" class="search-form " placeholder="please enter your search........">
             </div>
             <div class="col-3">
                 <div class="user-area">
@@ -39,37 +39,72 @@
 <div class="main-content">
     <!-- the main content begins here-->
     <div class="row userAdmin-dashboard-content">
-        <div class="col-1">
-            <p></p>
-        </div>
-        <!-- the begining of the tables -->
-        <div class="col-10">
-            <button class="add-item" id="add-product-button" onclick="displayAddPdtModal()">order new parcel</button>
+        <div class="col-11">
+            <button class="button-sunshine-outline" id="add-order" onclick="displayAddPdtModal()">new order</button>
             <table id="myTable">
                 <tr class="header">
+                    <th style="width:10%;">serial No.</th>
                     <th style="width:10%;">parcel name</th>
                     <th style="width:30%;">Description</th>
-                    <th style="width:10%;">Quantity</th>
-                    <th style="width:10%;">pick up location</th>
+                    <th style="width:10%;">pick up</th>
                     <th style="width:10%;">Destination</th>
-                    <th style="width:10%;">current location</th>
-                    <th style="width:10%;">delivery cost</th>
+                    <th style="width:15%;">current location</th>
+                    <th style="width:10%;">price</th>
                     <th style="width:10%;">status</th>
                     <th style="width:15%;">delivery </th>
                 </tr>
                 <tr>
-                    <td>45</td>
+                    <td>12856</td>
+                    <td>cooker</td>
                     <td>
                         Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
-                        The passage is attributed to an unknown typesetter in the 15th
                     </td>
-                    <td> 46</td>
                     <td>Tororo</td>
                     <td>Kampala</td>
                     <td>Jinja</td>
-                    <td>4600/=</td>
-                    <td><button id="edit" class="button-success" onclick="displayEditPdtModals()">Delivered</button></td>
-                    <td><button id="Delete" class="button-danger">edit</button></td></td>
+                    <td>4600 Ugx</td>
+                    <td>Transit</td>
+                    <td><button  class="button-success">update</button></td></td>
+                </tr>
+                <tr>
+                    <td>12856</td>
+                    <td>cooker</td>
+                    <td>
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    </td>
+                    <td>Tororo</td>
+                    <td>Kampala</td>
+                    <td>Jinja</td>
+                    <td>4600 Ugx</td>
+                    <td>Delivered</td>
+                    <td><button id="" class="button-success">update</button></td></td>
+                </tr>
+                <tr>
+                    <td>12856</td>
+                    <td>laptops</td>
+                    <td>
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    </td>
+                    <td>Tororo</td>
+                    <td>Kampala</td>
+                    <td>Jinja</td>
+                    <td>4600 Ugx</td>
+                    <td>transit</td>
+                    <td><button  class="button-success">update</button></td>
+                </tr>
+                <tr>
+                    <td>12856</td>
+                    <td>cooker</td>
+                    <td>
+                        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    </td>
+                    <td>Tororo</td>
+                    <td>Kampala</td>
+                    <td>Jinja</td>
+                    <td>4600 Ugx</td>
+                    <td>transit</td>
+                    <td><button class="button-success">update</button></td>
+
                 </tr>
             </table>
         </div>

@@ -113,6 +113,26 @@ li a:hover {
     margin: 10px 0 10px 0;
     border: 1px solid orange;
 }
+.button-success{
+    background-color:lightseagreen;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    color: white;
+    border: 1px lightseagreen;
+    margin-bottom:5px;
+    font-family: 'Raleway', sans-serif;
+}
+.button-sunshine-outline{
+    background: none;
+    font-family: 'Raleway', sans-serif;
+    border:2px solid orange;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    margin: 30px 10px 30px 0;
+    color: orange;
+    float: right;
+    border-radius: 5px;
+}
 /*form section areas*/
 
 .form-control{
@@ -145,16 +165,41 @@ li a:hover {
 .search-form{
     width:80%;
     background:none;
-    font-family: Raleway;
+    font-family:'Raleway',sans-serif;
     font-size: 15px;
     color:orange;
     padding: 10px 5px 10px 30px;
     border-radius: 50px;
     margin: 30px 5px 5px 0px;
-    border: 2px solid white;
+    border: 2px solid orange;
 }
 /* end of the styling for various form elements
  */
+/* the table styling */
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    margin-top: 30px;
+    overflow-x:auto;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    /* Add a bottom border to the  table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+    background-color: #f1f1f1;
+}
 /* the styling for the content */
 .content{
     padding-left: 50px;
