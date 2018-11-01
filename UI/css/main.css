@@ -33,6 +33,18 @@ li a:hover {
     border-radius: 5px;
 }
 /* various column areas*/
+/* user profile image section */
+.user-area{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.user-area>img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    border: 5px solid orange;
+}
+
 .col-1 {
     width: 8.33%;
     float: left;
@@ -128,6 +140,18 @@ li a:hover {
     padding:50px 50px 50px 50px;
     opacity:0.95;
     color: white;
+}
+/* the search form starts from here */
+.search-form{
+    width:80%;
+    background:none;
+    font-family: Raleway;
+    font-size: 15px;
+    color:orange;
+    padding: 10px 5px 10px 30px;
+    border-radius: 50px;
+    margin: 30px 5px 5px 0px;
+    border: 2px solid white;
 }
 /* end of the styling for various form elements
  */
