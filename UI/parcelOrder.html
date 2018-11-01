@@ -40,7 +40,7 @@
     <!-- the main content begins here-->
     <div class="row userAdmin-dashboard-content">
         <div class="col-11">
-            <button class="button-sunshine-outline" id="add-order" onclick="displayAddPdtModal()">new order</button>
+            <button class="button-sunshine-outline" id="add-order" onclick="display_add_parcel_order()">new order</button>
             <table id="myTable">
                 <tr class="header">
                     <th style="width:10%;">serial No.</th>
@@ -113,6 +113,48 @@
         <p></p>
     </div>
     <!-- the content ends here-->
+</div>
+<!-- the beginning of the create parcel order modal box section-->
+<div class="row">
+    <div class="modal" id="order-parcel-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="close_add_modal" onclick="close_modal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">new parcel order</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="parcelname" class="text-white">parcel name</label>
+                        <input type="text" name="parcel-name" id="parcelname" class="form-control">
+                    </div>
+                    <div>
+                        <label for="parcelDesc" class="text-white">Description</label>
+                        <textarea class="form-control" id="parcelDesc" name="parcelDesc" placeholder="your parcel description here....">
+
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="pickup" class="text-white">pickup</label>
+                        <input type="text" name="pareclpickup" id="pickup" class="form-control">
+                    </div>
+                    <div>
+                        <label for="destination" class="text-white">Destination</label>
+                        <input type="text" name="destination" id="destination" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="place Order" id="submit" class="button-sunshine">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <P></P>
+    </div>
 </div>
 <!-- the footer sections begins from here -->
 <div class="footer-section">
