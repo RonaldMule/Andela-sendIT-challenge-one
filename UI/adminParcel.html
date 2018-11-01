@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>sendIT|userDashboard|parcelOrders</title>
+    <title>sendIT|AdminDashboard|parcelOrders</title>
     <!-- link to main.css-->
     <link  rel="stylesheet" type="text/css"   href="css/main.css" >
     <!-- link to the Raleway google fonts-->
@@ -48,7 +48,7 @@
                     <th style="width:30%;">Description</th>
                     <th style="width:10%;">pick up</th>
                     <th style="width:10%;">Destination</th>
-                    <th style="width:15%;">current location</th>
+                    <th style="width:10%;">location</th>
                     <th style="width:15%;">price</th>
                     <th style="width:10%;">status</th>
                     <th style="width:15%;">delivery </th>
@@ -65,7 +65,7 @@
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
                     <td>Transit</td>
-                    <td><button  class="button-success" onclick="">update</button></td>
+                    <td><button  class="button-success" onclick="update_location_modal()">update</button></td>
                 </tr>
                 <tr>
                     <td>Akim</td>
@@ -79,7 +79,7 @@
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
                     <td>Delivered</td>
-                    <td><button id="" class="button-success" onclick="">update</button></td>
+                    <td><button id="" class="button-success" onclick="update_location_modal()">update</button></td>
                 </tr>
                 <tr>
                     <td>Brayan</td>
@@ -93,7 +93,7 @@
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
                     <td>transit</td>
-                    <td><button  class="button-success" onclick="">update</button></td>
+                    <td><button  class="button-success" onclick="update_location_modal()">update</button></td>
                 </tr>
                 <tr>
                     <td>Rolyce</td>
@@ -107,7 +107,7 @@
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
                     <td>transit</td>
-                    <td><button class="button-success" onclick="">update</button></td>
+                    <td><button class="button-success" onclick="update_location_modal()">update</button></td>
 
                 </tr>
                 <tr>
@@ -122,7 +122,7 @@
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
                     <td>transit</td>
-                    <td><button class="button-success" onclick="">update</button></td>
+                    <td><button class="button-success" onclick="update_location_modal()">update</button></td>
                 </tr>
             </table>
         </div>
@@ -131,6 +131,36 @@
         <p></p>
     </div>
     <!-- the content ends here-->
+</div>
+<!-- the footer sections begins from here -->
+<!-- the beginning of the update parcel order modal box section-->
+<div class="row">
+    <div class="modal" id="parcel-location-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="update_add_modal" onclick="close_update_modal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">update parcel location </h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="location" class="text-white">Current location</label>
+                        <input type="text" name="location" id="location" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <p><input type="checkbox" name="cancel">Delivered <input type="checkbox" name="cancel">Transit</p>
+                    <div>
+                        <input type="submit" name="submit"  value="update Now" id="update-location" class="button-sunshine">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <P></P>
+    </div>
 </div>
 <!-- the footer sections begins from here -->
 <div class="footer-section">
