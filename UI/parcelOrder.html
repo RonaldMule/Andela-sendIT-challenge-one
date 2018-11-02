@@ -186,6 +186,65 @@
     </div>
 </div>
 <!-- the footer sections begins from here -->
+<!-- the beginning of the create parcel order modal box section-->
+<div class="row">
+    <div class="modal" id="order-parcel-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="close_add_modal" onclick="close_modal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">new parcel order</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="parcelname" class="text-white">parcel name</label>
+                        <input type="text" name="parcel-name" id="parcelname" class="form-control">
+                    </div>
+                    <div>
+                        <label for="parcelDesc" class="text-white">Description</label>
+                        <textarea class="form-control" id="parcelDesc" name="parcelDesc" placeholder="your parcel description here....">
+
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="pickup" class="text-white">pickup</label>
+                        <input type="text" name="pareclpickup" id="pickup" class="form-control">
+                    </div>
+                    <div>
+                        <label for="destination" class="text-white">Destination</label>
+                        <input type="text" name="destination" id="destination" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="place Order" id="submit" class="button-sunshine">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <P></P>
+    </div>
+</div>
+<!-- the beginning of the user profile modal begins here-->
+<div class="row">
+    <div class="modal" id="user-profile-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="user_profile_modal" onclick="user_profile_modal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">user info information</h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <P></P>
+    </div>
+</div>
 <div class="footer-section">
     <div class="footer-area">
     </div>
