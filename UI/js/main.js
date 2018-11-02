@@ -22,3 +22,11 @@ function update_location_modal() {
 function close_update_modal(){
     parcel_location_modal.style.display="none";
 }
+/* the user profile modal section*/
+var user_profile_modal = document.getElementById('user-profile-modal');
+function display_user_profile() {
+    user_profile_modal.style.display ="block";
+}
+function close_profile_modal() {
+    user_profile_modal.style.display ="none";
+}
