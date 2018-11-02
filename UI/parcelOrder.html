@@ -27,7 +27,7 @@
                 <input type="text" name="search" id="search" class="search-form " placeholder="please enter your search........">
             </div>
             <div class="col-3">
-                <div class="user-area">
+                <div class="user-area" onclick="display_user_profile()">
                     <img src="images/default.jpg">
                 </div>
             </div>
@@ -185,6 +185,27 @@
         <P></P>
     </div>
 </div>
+<!-- the beginning of the user profile modal-->
+<div class="row">
+    <div class="modal" id="user-profile-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="user_profile_modal" onclick="close_profile_modal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">user info information</h1>
+                <p><strong>Orders In Transit</strong>: 4578</p>
+                <p><strong>Orders Delivered</strong>: 4578</p>
+                <p><strong>Orders Canceled</strong>: 4578</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <P></P>
+        </div>
+    </div>
+</div>
+<!--- the end of the user profile modal-->
 <!-- the footer sections begins from here -->
 <div class="footer-section">
     <div class="footer-area">
