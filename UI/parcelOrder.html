@@ -17,7 +17,7 @@
             <div class="col-1">
                 <h2></h2>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ul>
                     <li><a href="parcelOrder.html">parcel Orders</a></li>
                 </ul>
@@ -25,9 +25,16 @@
             <div class="col-5">
                 <input type="text" name="search" id="search" class="search-form " placeholder="please enter your search........">
             </div>
-            <div class="col-3">
-                <div class="user-area" onclick="display_user_profile()">
-                    <img src="images/default.jpg">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="user-area" onclick="display_user_profile()">
+                            <img src="images/default.jpg">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a href="login.html"><button class="logout_button"> logout</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,7 +171,7 @@
         <div class="col-4">
             <span class="close" id="update_add_modal" onclick="close_modal()">&times;</span>
             <div class="form-area-section">
-                <h1 class="text-white text-large">update Destination</h1>
+                <h1 class="text-white text-large">Update Destination</h1>
                 <form method="post" action="">
                     <div>
                         <label for="updateDestination" class="text-white">Destination</label>
