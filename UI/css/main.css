@@ -154,6 +154,14 @@ li a:hover {
     border: 2px solid white;
 
 }
+.form-area-section-modal{
+    margin-top: 10%;
+    margin-bottom:0;
+    background: grey;
+    padding:50px 50px 50px 50px;
+    opacity:0.95;
+    color: white;
+}
 .form-area-section{
     margin-top: 10%;
     margin-bottom:0;
