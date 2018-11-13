@@ -17,18 +17,29 @@
             <div class="col-1">
                 <h2></h2>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ul>
                     <li><a href="parcelOrder.html">parcel Orders</a></li>
+<<<<<<< HEAD
                     <li><a href="adminParcel.html"> Admin parcel page</a></li>
+=======
+                    <li><a href="adminParcel.html">Admin</a></li>
+>>>>>>> feature
                 </ul>
             </div>
             <div class="col-5">
                 <input type="text" name="search" id="search" class="search-form " placeholder="please enter your search........">
             </div>
-            <div class="col-3">
-                <div class="user-area" onclick="display_user_profile()">
-                    <img src="images/default.jpg">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="user-area" onclick="display_user_profile()">
+                            <img src="images/default.jpg">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <a href="login.html"><button class="logout_button"> logout</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,15 +54,15 @@
             <button class="button-sunshine-outline" id="add-order" onclick="display_add_parcel_order()">new order</button>
             <table id="myTable">
                 <tr class="header">
-                    <th style="width:10%;">serial No.</th>
-                    <th style="width:10%;">parcel name</th>
+                    <th style="width:10%;">Serial No.</th>
+                    <th style="width:10%;">Parcel name</th>
                     <th style="width:30%;">Description</th>
-                    <th style="width:10%;">pick up</th>
+                    <th style="width:10%;">Pick up</th>
                     <th style="width:10%;">Destination</th>
-                    <th style="width:15%;">current location</th>
-                    <th style="width:10%;">price</th>
-                    <th style="width:10%;">status</th>
-                    <th style="width:15%;">delivery </th>
+                    <th style="width:15%;">Current location</th>
+                    <th style="width:10%;">Price</th>
+                    <th style="width:10%;">Status</th>
+                    <th style="width:15%;">Delivery </th>
                 </tr>
                 <tr>
                     <td>12856</td>
@@ -89,7 +100,7 @@
                     <td>Kampala</td>
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
-                    <td>transit</td>
+                    <td>Transit</td>
                     <td><button  class="button-success" onclick="update_parcel_order()">update</button></td>
                 </tr>
                 <tr>
@@ -102,7 +113,7 @@
                     <td>Kampala</td>
                     <td>Jinja</td>
                     <td>4600 Ugx</td>
-                    <td>transit</td>
+                    <td>Transit</td>
                     <td><button class="button-success" onclick="update_parcel_order()">update</button></td>
 
                 </tr>
@@ -122,11 +133,11 @@
         </div>
         <div class="col-4">
             <span class="close" id="close_add_modal" onclick="close_modal()">&times;</span>
-            <div class="form-area-section">
-                <h1 class="text-white text-large">new parcel order</h1>
-                <form method="" action="">
+            <div class="form-area-section-modal">
+                <h1 class="text-white text-large">New Parcel Order</h1>
+                <form method="post" action="">
                     <div>
-                        <label for="parcelname" class="text-white">parcel name</label>
+                        <label for="parcelname" class="text-white">Parcel name</label>
                         <input type="text" name="parcel-name" id="parcelname" class="form-control">
                     </div>
                     <div>
@@ -136,7 +147,7 @@
                         </textarea>
                     </div>
                     <div>
-                        <label for="pickup" class="text-white">pickup</label>
+                        <label for="pickup" class="text-white">Pickup</label>
                         <input type="text" name="pareclpickup" id="pickup" class="form-control">
                     </div>
                     <div>
@@ -146,7 +157,7 @@
                     <div>
                     </div>
                     <div>
-                        <input type="submit" name="submit"  value="place Order" id="submit" class="button-sunshine">
+                        <input type="submit" name="submit"  value="Place Order" id="submit" class="button-sunshine">
                     </div>
                 </form>
             </div>
@@ -164,18 +175,24 @@
         </div>
         <div class="col-4">
             <span class="close" id="update_add_modal" onclick="close_modal()">&times;</span>
+<<<<<<< HEAD
             <div class="form-area-section">
                 <h1 class="text-white text-large">update parcel </h1>
                 <form method="" action="">
+=======
+            <div class="form-area-section-modal">
+                <h1 class="text-white text-large">Update Destination</h1>
+                <form method="post" action="">
+>>>>>>> feature
                     <div>
                         <label for="updateDestination" class="text-white">Destination</label>
-                        <input type="text" name="destination" id="updateDestination" class="form-control">
+                        <input type="text" name="destination" id="updateDestination" class="form-control" placeholder="enter your current destination">
                     </div>
                     <div>
                     </div>
                     <input type="checkbox" name="cancel">Cancel Delivery
                     <div>
-                        <input type="submit" name="submit"  value="update Order" id="updateCurrentDestination" class="button-sunshine">
+                        <input type="submit" name="submit"  value="update destination" id="updateCurrentDestination" class="button-sunshine">
                     </div>
                 </form>
             </div>

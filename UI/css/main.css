@@ -112,6 +112,7 @@ li a:hover {
     font-size: 20px;
     margin: 10px 0 10px 0;
     border: 1px solid orange;
+    border-radius: 5px;
 }
 .button-success{
     background-color:lightseagreen;
@@ -133,6 +134,14 @@ li a:hover {
     float: right;
     border-radius: 5px;
 }
+.logout_button{
+    color: orange;
+    padding:10px 30px 10px 30px;
+    margin-top: 30px;
+    background:black;
+    border-radius:50px;
+    border: 4px orange solid;
+}
 /*form section areas*/
 
 .form-control{
@@ -145,7 +154,7 @@ li a:hover {
     border: 2px solid white;
 
 }
-.form-area-section{
+.form-area-section-modal{
     margin-top: 10%;
     margin-bottom:0;
     background: grey;
@@ -153,10 +162,18 @@ li a:hover {
     opacity:0.95;
     color: white;
 }
+.form-area-section{
+    margin-top: 10%;
+    margin-bottom:0;
+    background:lightseagreen;
+    padding:50px 50px 50px 50px;
+    opacity:0.95;
+    color: white;
+}
 .form-area-section-login{
     margin-top: 40%;
     margin-bottom:0;
-    background: grey;
+    background:lightseagreen;
     padding:50px 50px 50px 50px;
     opacity:0.95;
     color: white;
@@ -252,7 +269,6 @@ li a:hover {
     background-image: url("../images/sendIT.png");
     width: 100%;
     height: auto;
-    background-repeat: no-repeat;
     background-size:cover;
 }
 /* end of the content styling */
